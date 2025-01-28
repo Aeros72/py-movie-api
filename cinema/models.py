@@ -6,8 +6,5 @@ class Movie(models.Model):
     description = models.CharField(max_length=255)
     duration = models.IntegerField()
 
-    class Meta:
-        verbose_name = "movies"
-
     def __str__(self):
         return f"{self.title} - {self.duration} min"
